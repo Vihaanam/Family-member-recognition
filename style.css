@@ -1,0 +1,12 @@
+hr {
+    background-color: black;
+    height: 0.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div hr {
+    background-color: black;
+    height: 0.5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}

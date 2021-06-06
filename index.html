@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Family member recognizer</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: lightgoldenrodyellow;">
+        <center>
+            <br>
+            <h1 class="btn-primary" style="padding: 10px; width: fit-content; border-radius: 15px;"><b>Family member recognizer</b></h1>
+            <h2 style="background-color: white; width: fit-content; border-radius: 15px; padding: 6px; border-width: 2px; border-style: dashed; border-color: black;">Recognize your family member</h2>
+            <br>
+            <h3 class="text-capitalize">These are the recognized family members:</h3>
+            <hr>
+            <div style="font-size: 24px;">
+                <b>Me</b>
+                <hr>
+                <b>Mother</b>
+                <hr>
+                <b>Father</b>
+            </div>
+            <hr>
+            <br>
+            <h4><b>Webcam:</b></h4>
+            <div id="camera" style="width: 350px; height: 300px; border-color: black; border-width: 2px; border-style: dotted;"></div>
+            <br>
+            <br>
+            <div id="result"></div>
+            <br>
+            <br>
+            <button class="btn btn-info">Capture photo</button>
+            <br>
+            <br>
+            <button class="btn btn-success">Indentify photo</button>
+            <br>
+            <br>
+            <h3>Family member: <b><span id="name_of_family_member"></span></b></h3>
+            <h3>Accuracy: <b><span id="accuracy_of_family_member"></span></b></h3>
+            <br>
+            <br>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
