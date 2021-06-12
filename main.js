@@ -16,3 +16,17 @@ classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models
 function modelLoaded() {
     console.log("Model loaded!");
 }
+function Check() {
+    img = document.getElementById("captured_image");
+    classifier.classify(img, GetImage);
+}
+function GetImage(error, results) {
+    console.log("Checking results...")
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(results);
+        document.getElementById("name_of_family_member").innerHTML = results[0].label;
+        document.getElementById("accuracy_of_family_member").innerHTML = results[0].confidence.toFixed(3);
+    }
+}
